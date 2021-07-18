@@ -1,4 +1,5 @@
-# Serve Vue on GitHub Pages
+# Deploy Vue to GitHub Pages
+source: https://www.youtube.com/watch?v=i_XbW-FsLKk
 
 ### 1) Create a new VUE project
 ```
