@@ -1,19 +1,39 @@
-# vue-github-pages
+# Serve Vue on GitHub Pages
 
-## Project setup
-```
-npm install
-```
+### 1) Create vue.config.js file and set publicPath: '' 
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
+### 2) Build Project
 ```
 npm run build
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### 3) Cd to dist folder
+```
+cd dist
+```
+
+### 4) Create new git repo in dist
+```
+git init
+```
+
+### 5) Create new local & create a remote branch (same name)
+```
+git checkout -b gh-pages
+```
+
+### 6) Stage all files & commit locally
+```
+git add .
+git commit -m "commit message"
+```
+
+### 3) Link new repo to remote repo
+```
+git remote add origin https://github.com/MiminaH/VUE-GitHub-Pages.git
+```
+
+### 3) Push new repo to remote branch (branch-source for github pages)
+```
+git push -f origin gh-pages
+```
